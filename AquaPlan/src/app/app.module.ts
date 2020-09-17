@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CostCalculatorComponent } from './cost-calculator/cost-calculator.component';
 import { MatToolbarModule } from "@angular/material/toolbar"
+import { MatInputModule } from '@angular/material/input'
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { MatToolbarModule } from "@angular/material/toolbar"
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatInputModule
   ],
 
   providers: [],
