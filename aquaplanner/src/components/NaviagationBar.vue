@@ -1,13 +1,17 @@
+<!-- Bootstrap nav-item support vue-router" -->
+<!-- <router-link to="/costCalculator">Kosten</router-link> -->
+<!-- <b-nav-item href="#" disabled>Disabled</b-nav-item> -->
+
 <template>
   <b-navbar toggleable="lg" type="dark" variant="info">
-    <b-navbar-brand href="#">{{ appTitle }}</b-navbar-brand>
+    <b-navbar-brand to="/">{{ appTitle }}</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item href="#">Link</b-nav-item>
-        <b-nav-item href="#" disabled>Disabled</b-nav-item>
+        <b-nav-item to="/costCalculator">Kosten</b-nav-item>
+        <b-nav-item to="/calendar">Kalender</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
@@ -44,12 +48,12 @@
 </template>
 
 <script>
-export default {
-  name: "NavigationBar",
-  props: {
-    appTitle: String,
-  },
-};
+  export default {
+    name: "NavigationBar",
+    props: {
+      appTitle: String,
+    },
+  };
 </script>
 
 <style></style>
