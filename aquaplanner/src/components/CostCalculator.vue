@@ -3,8 +3,10 @@
     <!--  privePerKiloWatt input-->
     <b-form-group
       label-cols-sm="4"
-      label-cols-lg="3"
+      label-cols-lg="4"
       label="Strompreis:"
+      label-align-sm="left"
+      label-align-lg="left"
       label-for="pricePerKiloWattInput"
     >
       <b-input-group append="Cent/kW">
@@ -19,7 +21,9 @@
     <!--  DAILY SHINING TIME INPUT-->
     <b-form-group
       label-cols-sm="4"
-      label-cols-lg="3"
+      label-cols-lg="4"
+      label-align-sm="left"
+      label-align-lg="left"
       label="Tägliche Beleuchtung:"
       label-for="shingingHoursPerDay"
     >
@@ -35,7 +39,9 @@
     <!--  POWER CONSUMPTION LIGHT INPUT-->
     <b-form-group
       label-cols-sm="4"
-      label-cols-lg="3"
+      label-cols-lg="4"
+      label-align-sm="left"
+      label-align-lg="left"
       label="Leistung der Beleuchtung:"
       label-for="shiningPowerInput"
     >
@@ -51,7 +57,9 @@
     <!--  POWER CONSUMPTION FILTER INPUT-->
     <b-form-group
       label-cols-sm="4"
-      label-cols-lg="3"
+      label-cols-lg="4"
+      label-align-sm="left"
+      label-align-lg="left"
       label="Leistung des Filters:"
       label-for="filterPowerInput"
     >
@@ -69,7 +77,9 @@
     <!-- RESULT OUTPUT -->
     <b-form-group
       label-cols-sm="4"
-      label-cols-lg="3"
+      label-cols-lg="4"
+      label-align-sm="left"
+      label-align-lg="left"
       label="Dein Aquarium kostet:"
       label-for="costCalculationResultDay"
     >
@@ -83,7 +93,7 @@
       </b-input-group>
     </b-form-group>
 
-    <b-form-group label-cols-sm="4" label-cols-lg="3">
+    <b-form-group label-cols-sm="4" label-cols-lg="4">
       <b-input-group append="€/Monat">
         <b-form-input
           readonly
@@ -93,7 +103,7 @@
         />
       </b-input-group>
     </b-form-group>
-    <b-form-group label-cols-sm="4" label-cols-lg="3">
+    <b-form-group label-cols-sm="4" label-cols-lg="4">
       <b-input-group append="€/Jahr">
         <b-form-input
           readonly

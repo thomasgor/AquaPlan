@@ -2,8 +2,9 @@ import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import Calendar from "../views/Calendar.vue";
+import PerformanceTest from "../views/PerformanceTest.vue";
 import HelloWord from "../components/HelloWorld.vue";
-import CostCalculator from "../components/CostCalculator.vue";
+import Costs from "../views/Costs.vue";
 
 Vue.use(VueRouter);
 
@@ -14,14 +15,19 @@ const routes: Array<RouteConfig> = [
     component: HelloWord,
   },
   {
-    path: "/costCalculator",
-    name: "CostCalculator",
-    component: CostCalculator,
+    path: "/costs",
+    name: "Costs",
+    component: Costs,
   },
   {
     path: "/calendar",
     name: "Calendar",
     component: Calendar,
+  },
+  {
+    path: "/performanceTest",
+    name: "PerformanceTest",
+    component: PerformanceTest,
   },
   // {
   //   path: "/about",

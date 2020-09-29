@@ -10,8 +10,9 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item to="/costCalculator">Kosten</b-nav-item>
+        <b-nav-item to="/costs">Kosten</b-nav-item>
         <b-nav-item to="/calendar">Kalender</b-nav-item>
+        <b-nav-item to="/performanceTest">PerformanceTest</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
@@ -48,12 +49,12 @@
 </template>
 
 <script>
-  export default {
-    name: "NavigationBar",
-    props: {
-      appTitle: String,
-    },
-  };
+export default {
+  name: "NavigationBar",
+  props: {
+    appTitle: String,
+  },
+};
 </script>
 
 <style></style>
