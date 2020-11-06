@@ -11,6 +11,7 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item to="/costs">Kosten</b-nav-item>
+        <b-nav-item to="/waterValues">Wasserwerte</b-nav-item>
         <b-nav-item to="/calendar">Kalender</b-nav-item>
         <b-nav-item to="/performanceTest">PerformanceTest</b-nav-item>
       </b-navbar-nav>
