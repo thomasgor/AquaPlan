@@ -12,6 +12,7 @@
       <b-input-group v-bind:append="measuringPoint.waterParameter.unit.displayName">
         <b-form-input
           v-bind:id="measuringPoint.waterParameter.key"
+          v-model.number="measuringPoint.value"
           type="number"
           placeholder="-"
         />

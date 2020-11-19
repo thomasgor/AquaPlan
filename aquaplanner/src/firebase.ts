@@ -12,7 +12,6 @@ const firebaseConfig = {
 // Initialize Firebase
 const firebaseApp = initializeApp(firebaseConfig);
 console.log("firebase intitializing");
-debugger;
 const db = firebaseApp.firestore();
 const auth = firebaseApp.auth();
 

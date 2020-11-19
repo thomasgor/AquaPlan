@@ -1,6 +1,5 @@
 <template>
 <div>
-
     {{measuring.date}}
     {{measuring.id}}
 </div>

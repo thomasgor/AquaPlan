@@ -78,16 +78,19 @@ export default Vue.extend({
 
             if(userUID){
                  let measuringData = measuring.getMeasuringData();
-                 let dbPath = `/user/${userUID}/measurings/${tankId}/${measuringDateId}/`;        
-                         // firebase.database().ref(dbPath).set(dbPath, measuringDate);
+                 measuringData.tankId= tankId;
+              
+                let dbPath = `/user/${userUID}/measurings/`;        
                 let measuringCollection = db.collection(dbPath);
-                measuringCollection.add(measuringData)
+                
+                measuringCollection.doc(measuringDateId.toString()).set(measuringData)
                 .then(function(docRef: any) {
-                    console.log("Document written with ID: ", docRef.id);
+                    console.log("Successfully written new measuring to firestore");
                 })
                 .catch(function(error: any) {
                     console.error("Error adding document: ", error);
                 });
+              
             }
         }
     },

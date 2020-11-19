@@ -1,6 +1,8 @@
 <template>
   <div>
+      
       <MeasuringPointInputForm v-bind:waterParameters="waterParameters"/>
+      <MeasuringList/>
       </div>
 </template>
 
@@ -8,10 +10,11 @@
 import Vue from 'vue'
 import  MeasuringPointInputForm from "../components/watervalues/MeasuringPointInputForm.vue";
 import WaterParameter from '@/components/watervalues/WaterParameter';
+import MeasuringList from '@/components/watervalues/MeasuringList.vue';
 export default Vue.extend({
 
     name:'WaterValues',
-    components: {MeasuringPointInputForm},
+    components: {MeasuringPointInputForm, MeasuringList},
 
     data: () => {
         return {
